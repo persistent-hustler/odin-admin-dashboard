@@ -30,10 +30,29 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 100px;
+}
+
+.search {
+    flex-grow: 1;
+}
+
+label {
+    display: flex;
+    gap: 16px;
+}
+
+input[type="search"] {
+    background-color: #e2e8f0;
+    border: none;
+    height: 30px;
+    flex-grow: 1;
+    border-radius: 15px;
 }
 
 .top-right {
     display: flex;
+    align-items: center;
     gap: 32px;
 }
 
@@ -79,4 +98,10 @@
 .trending {
     background-color: white;
     grid-area: 2/2/3/3;
+}
+
+svg {
+    display: inline-block;
+    position: relative;
+    width: 24px;
 }
