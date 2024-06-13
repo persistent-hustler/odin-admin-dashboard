@@ -12,6 +12,8 @@
     grid-template-columns: 300px 1fr;
     width: 100vw;
     height: 100vh;
+    background-color: #e2e8f0;
+    min-width: 1000px;
 }
 
 .sidebar {
@@ -45,16 +47,19 @@
 }
 
 .header {
+    background-color: white;
     grid-area: 1/2/2/3;
     display: grid;
     grid-template-rows: 1fr 2fr;
-    padding: 10px 40px 4px;
+    box-shadow: 2px 4px 4px rgb(214, 214, 214);
+    overflow: auto;
 }
 
 .topbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 40px 4px;
     gap: 100px;
 }
 
@@ -82,9 +87,10 @@ input[type="search"] {
 }
 
 .main-header {
-    display: flex;
+    padding: 10px 40px 4px;
+    display: grid;
     align-items: center;
-    justify-content: space-between;
+    grid-template-columns: 2fr 1fr;
 }
 
 .greet {
@@ -95,14 +101,16 @@ input[type="search"] {
 
 .create {
     display: flex;
-    gap: 28px;
+    justify-content: space-between;
+    gap: 12px;
 }
 
 button {
+    padding: 8px 0px;
+    flex-grow: 1;
     background-color: #1992d4;
     color: white;
     border: none;
-    padding: 10px 28px;
     font-size: 16px;
     font-weight: bold;
     border-radius: 20px;
@@ -110,7 +118,6 @@ button {
 
 .content {
     padding: 60px 30px;
-    background-color: #e2e8f0;
     grid-area: 2/2/3/3;
     display: grid;
     grid-template-columns: 1fr 240px;
@@ -120,15 +127,14 @@ button {
 
 .article {
     grid-area: 1/1/3/2;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 .card {
     background-color: white;
-    width: 400px;
-    height: 200px;
+    width: 100%;
 }
 
 .announcements {
