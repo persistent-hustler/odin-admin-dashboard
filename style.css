@@ -129,6 +129,14 @@ button {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    position: relative;
+}
+
+.article>h3, .announcements>h3, .trending>h3{
+    font-weight: 500;
+    position: absolute;
+    font-size: 20px;
+    top: -36px;
 }
 
 .card {
@@ -159,6 +167,25 @@ button {
     grid-area: 1/2/2/3;
     border-radius: 8px;
     box-shadow: 2px 4px 4px rgb(214, 214, 214);
+    display: grid;
+    grid-auto-rows: 90px;
+    align-content: center;
+    padding: 20px;
+    position: relative;
+}
+
+.news {
+    padding: 12px;
+    border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+.news:last-child {
+    border-bottom: none;
+}
+
+.announcements p {
+    color: gray;
+    font-size: 12px;
 }
 
 .trending {
@@ -166,6 +193,26 @@ button {
     grid-area: 2/2/3/3;
     border-radius: 8px;
     box-shadow: 2px 4px 4px rgb(214, 214, 214);
+    padding: 18px;
+    display: grid;
+    grid-auto-rows: 60px;
+    align-items: center;
+    position: relative;
+}
+
+.trending .person {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    grid-template-rows: 18px 18px;
+}
+
+.person>svg {
+    grid-area: 1/1/3/2;
+}
+
+.person :last-child {
+    color: gray;
+    font-size: 16px;
 }
 
 svg {
