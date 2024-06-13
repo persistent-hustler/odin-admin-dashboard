@@ -135,16 +135,23 @@ button {
 .card {
     background-color: white;
     width: 100%;
+    border-left: 8px solid #f0b429;
+    border-radius: 8px;
+    box-shadow: 2px 4px 4px rgb(214, 214, 214);
 }
 
 .announcements {
     background-color: white;
     grid-area: 1/2/2/3;
+    border-radius: 8px;
+    box-shadow: 2px 4px 4px rgb(214, 214, 214);
 }
 
 .trending {
     background-color: white;
     grid-area: 2/2/3/3;
+    border-radius: 8px;
+    box-shadow: 2px 4px 4px rgb(214, 214, 214);
 }
 
 svg {
